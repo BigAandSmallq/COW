@@ -4,4 +4,5 @@
 
 layout: page
 title: "Cyclic One-Way Diffusion"
+theme: minima
 ---
