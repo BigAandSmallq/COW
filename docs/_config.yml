@@ -2,11 +2,10 @@
 remote_theme: aksakalli/jekyll-doc-theme@gh-pages 
 
 
-title: Jekyll Doc Theme
-email: your-email@domain.com
+title: Diffusion in Diffusion
+email: yongqiyang@whu.edu.cn
 description: >
-  Jekyll Template for Project Websites
-  providing documentation and blog post pages.
+  Cyclic One-Way Diffusion for Text-Vision-Conditioned Generation
 lang: en-US
 
 baseurl: "/COW" # the subpath of your site, e.g. /blog/
