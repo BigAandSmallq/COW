@@ -15,12 +15,12 @@ layout: default
         <h1>Abstract</h1>
         <p>
                 Text-to-Image (T2I) generation with diffusion models allows users to control the semantic content in the synthesized images given text conditions.
-            As a further step toward a more customized image creation application, we introduce a new multi-modality generation setting that synthesizes images based on not only the semantic-level textual input, but also on the pixel-level visual conditions. 
+            As a further step toward a more customized image creation application, we introduce a new multi-modality generation setting that synthesizes images based on not only the semantic-level textual input, but also on the pixel-level visual conditions.
             Existing literature first converts the given visual information to semantic-level representation by connecting it to languages, and then incorporates it into the original denoising process. Seemingly intuitive, such methodological design loses the pixel values during the semantic transition, thus failing to fulfill the task scenario where the preservation of low-level vision is desired (<i>e.g.</i>, ID of a given face image).
             To this end, we propose <b>Cyclic One-Way Diffusion</b> (COW), a training-free framework for creating customized images with respect to semantic-text and pixel-visual conditioning. Notably, we observe that sub-regions of an image impose mutual interference, just like physical diffusion, to achieve ultimate harmony along the denoising trajectory.
             Thus we propose to repetitively utilize the given visual condition in a cyclic way, by planting the visual condition as a high-concentration  <b>``seed''</b> at the initialization step of the denoising process, and <b>``diffuse''</b> it into a harmonious picture by controlling a one-way information flow from the visual condition.
             We repeat the destroy-and-construct process multiple times to gradually but steadily impose the internal diffusion process within the image.
-            Experiments on the challenging one-shot face and text-conditioned image synthesis task demonstrate our superiority in terms of speed, image quality, and conditional fidelity compared to learning-based text-vision conditional methods. 
+            Experiments on the challenging one-shot face and text-conditioned image synthesis task demonstrate our superiority in terms of speed, image quality, and conditional fidelity compared to learning-based text-vision conditional methods.
         </p>
     </div>
 </div>
@@ -45,6 +45,17 @@ layout: default
         </div>
     </div>
     <hr>
+
+    <div class="row">
+      <div class="col-md-6 text-center">
+            <video controls loop autoplay>
+														<source src="/assets/img/COW_generation_process.mp4" type="video/mp4">
+													  </video>
+        </div>
+    <hr>
+    </div>
+    <hr>
+
     <div class="row">
         <div class="col-sm-4">
             <h1 class="text-center"><i class="fa fa-pencil" aria-hidden="true"></i></h1>
