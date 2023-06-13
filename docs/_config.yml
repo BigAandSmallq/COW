@@ -1,4 +1,7 @@
 # Site settings
+remote_theme: aksakalli/jekyll-doc-theme@gh-pages 
+
+
 title: Jekyll Doc Theme
 email: your-email@domain.com
 description: >
@@ -59,4 +62,3 @@ collections:
     permalink: /blog/:year/:month/:day/:title/
     output: true
 
-remote_theme: aksakalli/jekyll-doc-theme@gh-pages 

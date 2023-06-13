@@ -2,6 +2,7 @@ source "https://rubygems.org"
 ruby RUBY_VERSION
 
 # gem "jekyll", "4.0"
+gem "jekyll-remote-theme"
 
 # to use GitHub Pages
 gem "github-pages", group: :jekyll_plugins
@@ -25,4 +26,3 @@ end
 gem "wdm", "~> 0.1.1", :install_if => Gem.win_platform?
 
 
-gem "jekyll-remote-theme"
