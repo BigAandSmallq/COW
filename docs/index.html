@@ -4,15 +4,14 @@ layout: default
 
 <div class="header-container jumbotron">
     <div class="container">
-        <h1 class="text_center">Diffusion in Diffusion: <br> Cyclic One-Way Diffusion for Text-Vision-Conditioned Generation</h1>
-        <p class="text">By investigating the space-wise diffusion phenomenon along with the step-wise reverse diffusion during denoising, We propose a training-free VT2I generation method by efficiently introducing the viusal condition to the pretrained T2I model.</p>
+        <h1 class="make-center">Diffusion in Diffusion: <br> Cyclic One-Way Diffusion for Text-Vision-Conditioned Generation</h1>
+        <p>By investigating the space-wise diffusion phenomenon along with the step-wise reverse diffusion during denoising, We propose a training-free VT2I generation method by efficiently introducing the viusal condition to the pretrained T2I model.</p>
         <p><a class="btn btn-primary btn-lg" href="{{ "/docs/home/" | relative_url }}" role="button">View Paper</a></p>
     </div>
 </div>
 
 <div class="container">
     <div class="row">
-        
         <video controls loop autoplay>
             <source src="assets/img/COW_generation_process.mp4" type="video/mp4">
         </video>
@@ -23,8 +22,8 @@ layout: default
 
 <div class="container">
     <div class="row">
-        <h2 class="text_center">Abstract</h2>
-        <p class="text">
+        <h2 class="make-center">Abstract</h2>
+        <p>
                 Text-to-Image (T2I) generation with diffusion models allows users to control the semantic content in the synthesized images given text conditions.
             As a further step toward a more customized image creation application, we introduce a new multi-modality generation setting that synthesizes images based on not only the semantic-level textual input, but also on the pixel-level visual conditions.
             Existing literature first converts the given visual information to semantic-level representation by connecting it to languages, and then incorporates it into the original denoising process. Seemingly intuitive, such methodological design loses the pixel values during the semantic transition, thus failing to fulfill the task scenario where the preservation of low-level vision is desired (<i>e.g.</i>, ID of a given face image).
@@ -39,7 +38,7 @@ layout: default
 <div class="container">
     <div class="row">
         <h2 class="text-center">Diffusion Phenomenon</h2>
-            <p class="text"> We inverse pictures of pure gray and white back to x_t, merge them together with different layouts and then regenerate them back to x_0 via deterministic denoising.
+            <p> We inverse pictures of pure gray and white back to x_t, merge them together with different layouts and then regenerate them back to x_0 via deterministic denoising.
             Different columns indicate different replacement steps t. The resulting images show how regions within an image diffuse into each other during denoising.</p>
     </div>
     <div class="row">
@@ -49,8 +48,8 @@ layout: default
 
 <div class="container">
     <div class="row">
-            <h2 class="text_center">Method</h2>
-              <p class="text">We stick the given visual  condition  on a predefined background and
+            <h2 class="make-center">Method</h2>
+              <p>We stick the given visual  condition  on a predefined background and
                  inverse it as the seed initialization of the denoising starting point. 
                  In the Cyclic One-Way Diffusion process, we ``destroy'' and ``construct'' the image in a cyclic way and ensure a one-way diffusion by consistently replacing it with corresponding x_t.</p>
     <div style="text-align:center;">
@@ -79,7 +78,7 @@ layout: default
     <div class="row">
         <div class="col-md-6">
             <h2 class="text-center">Diffusion Phenomenon</h2>
-              <p class="text"> We inverse pictures of pure gray and white back to x_t, merge them together with different layouts and then regenerate them back to x_0 via deterministic denoising.
+              <p> We inverse pictures of pure gray and white back to x_t, merge them together with different layouts and then regenerate them back to x_0 via deterministic denoising.
                 Different columns indicate different replacement steps t. The resulting images show how regions within an image diffuse into each other during denoising.</p>
         </div>
         <div class="col-md-6 text-center">
