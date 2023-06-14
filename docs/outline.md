@@ -1,9 +1,13 @@
 # Diffusion in Diffusion
 
+teaser fig (可以是动图)
+
 ## abstract
-abstract with teaser fig
+abstract
+
 ## Preliminares
 diffusion phenomenon
 ## method flow chat
 
-## generalized viusal condition results
+
+## more results

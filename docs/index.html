@@ -29,28 +29,35 @@ layout: default
 <div class="container">
     <div class="row">
         <div class="col-md-6">
-            <h2 class="header-light regular-pad">What is Jekyll?</h2>
-              <p class="lead">Jekyll is a simple, blog-aware, static site generator. It takes a template
-              directory containing raw text files in various formats, runs it through
-              a converter (like <a href="https://daringfireball.net/projects/markdown/">Markdown</a>)
-              and our <a href="https://github.com/Shopify/liquid/wiki">Liquid</a> renderer, and
-              spits out a complete, ready-to-publish static website suitable
-              for serving with your favorite web server. Jekyll also happens to be the engine
-              behind <a href="https://pages.github.com">GitHub Pages</a>, which means you can use Jekyll
-              to host your project's page, blog, or website from GitHub’s servers <strong>for
-              free</strong>.</p>
+            <h2 class="header-light regular-pad">Diffusion Phenomenon</h2>
+              <p class="lead"> We inverse pictures of pure gray and white back to x_t, merge them together with different layouts and then regenerate them back to x_0 via deterministic denoising.
+                Different columns indicate different replacement steps t. The resulting images show how regions within an image diffuse into each other during denoising.</p>
         </div>
         <div class="col-md-6 text-center">
-            <img src="{{ "/assets/img/example.png" | relative_url }}" alt="Jekyll logo" class="img-responsive">
+            <img src= "/assets/img/preliminary.png"  class="img-responsive">
         </div>
     </div>
     <hr>
 
     <div class="row">
+        <div class="col-md-6">
+            <h2 class="header-light regular-pad">Method</h2>
+              <p class="lead">we stick the given visual  condition  on a predefined background and
+                 inverse it as the seed initialization of the denoising starting point. 
+                 In the Cyclic One-Way Diffusion process, we ``destroy'' and ``construct'' the image in a cyclic way and ensure a one-way diffusion by consistently replacing it with corresponding x_t.</p>
+        </div>
+        <div class="col-md-6 text-center">
+            <img src= "/assets/img/method.png"  class="img-responsive">
+        </div>
+    </div>
+
+
+
+    <div class="row">
       <div class="col-md-6 text-center">
             <video controls loop autoplay>
-														<source src="/assets/img/COW_generation_process.mp4" type="video/mp4">
-													  </video>
+                <source src="/assets/img/COW_generation_process.mp4" type="video/mp4">
+            </video>
         </div>
     <hr>
     </div>
