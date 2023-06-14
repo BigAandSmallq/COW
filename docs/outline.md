@@ -1,7 +1,7 @@
 # Diffusion in Diffusion
 
 ## abstract
-abstract with teasor fig
+abstract with teaser fig
 ## Preliminares
 diffusion phenomenon
 ## method flow chat
