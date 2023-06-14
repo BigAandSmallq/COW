@@ -12,7 +12,14 @@ layout: default
 
 <div class="container">
     <div class="row">
-        <h1>Abstract</h1>
+        <img src= "assets/img/example.png"  class="img-responsive">
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="row">
+        <h2>Abstract</h2>
         <p>
                 Text-to-Image (T2I) generation with diffusion models allows users to control the semantic content in the synthesized images given text conditions.
             As a further step toward a more customized image creation application, we introduce a new multi-modality generation setting that synthesizes images based on not only the semantic-level textual input, but also on the pixel-level visual conditions.
@@ -81,17 +88,6 @@ layout: default
     </div>
     <hr>
 
-    <div class="row">
-        <div class="col-md-6">
-            <h2 class="header-light regular-pad">Method</h2>
-              <p class="lead">we stick the given visual  condition  on a predefined background and
-                 inverse it as the seed initialization of the denoising starting point. 
-                 In the Cyclic One-Way Diffusion process, we ``destroy'' and ``construct'' the image in a cyclic way and ensure a one-way diffusion by consistently replacing it with corresponding x_t.</p>
-        </div>
-        <div class="col-md-6 text-center">
-            <img src= "assets/img/method.png"  class="img-responsive">
-        </div>
-    </div>
 
 
 
