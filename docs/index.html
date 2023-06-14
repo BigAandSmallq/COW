@@ -4,7 +4,7 @@ layout: default
 
 <div class="header-container jumbotron">
     <div class="container">
-        <h1>Diffusion in Diffusion: <br> Cyclic One-Way Diffusion for Text-Vision-Conditioned Generation</h1>
+        <h1 class="make_center">Diffusion in Diffusion: <br> Cyclic One-Way Diffusion for Text-Vision-Conditioned Generation</h1>
         <p>By investigating the space-wise diffusion phenomenon along with the step-wise reverse diffusion during denoising, We propose a training-free VT2I generation method by efficiently introducing the viusal condition to the pretrained T2I model.</p>
         <p><a class="btn btn-primary btn-lg" href="{{ "/docs/home/" | relative_url }}" role="button">View Paper</a></p>
     </div>
@@ -19,8 +19,8 @@ layout: default
 
 <div class="container">
     <div class="row">
-        <h2>Abstract</h2>
-        <p>
+        <h2 class="make_center">Abstract</h2>
+        <p class="text">
                 Text-to-Image (T2I) generation with diffusion models allows users to control the semantic content in the synthesized images given text conditions.
             As a further step toward a more customized image creation application, we introduce a new multi-modality generation setting that synthesizes images based on not only the semantic-level textual input, but also on the pixel-level visual conditions.
             Existing literature first converts the given visual information to semantic-level representation by connecting it to languages, and then incorporates it into the original denoising process. Seemingly intuitive, such methodological design loses the pixel values during the semantic transition, thus failing to fulfill the task scenario where the preservation of low-level vision is desired (<i>e.g.</i>, ID of a given face image).
