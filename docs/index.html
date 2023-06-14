@@ -15,7 +15,6 @@ layout: default
         <img src= "assets/img/example.png"  class="img-responsive">
     </div>
 </div>
-<p style="text-align:center;max-width: 80%;"><img src="assets/img/example.png" class="img-responsive"></p>
 
 
 <div class="container" text-align="center">
@@ -40,20 +39,21 @@ layout: default
             Different columns indicate different replacement steps t. The resulting images show how regions within an image diffuse into each other during denoising.</p>
     </div>
     <div class="row">
-        <div max-width="80%"></div>
-        <img src= "assets/img/preliminary.png"  class="img-responsive">
+        <div max-width="80%">
+            <img src= "assets/img/preliminary.png"  class="img-responsive">
+        </div>
     </div>
 </div>
 
 <div class="container" text-align="center">
     <div class="row">
             <h2 class="make-center">Method</h2>
-              <p class="text">We stick the given visual  condition  on a predefined background and
+            <p class="text">We stick the given visual  condition  on a predefined background and
                  inverse it as the seed initialization of the denoising starting point. 
                  In the Cyclic One-Way Diffusion process, we ``destroy'' and ``construct'' the image in a cyclic way and ensure a one-way diffusion by consistently replacing it with corresponding x_t.</p>
     </div>
     <div class="row">
-        <div class="text-center" max-width="80%">
+        <div max-width="80%">
             <img src= "assets/img/method.png"  class="img-responsive">
         </div>
     </div>
