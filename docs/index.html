@@ -5,7 +5,7 @@ layout: default
 <div class="header-container jumbotron">
     <div class="container">
         <h1 class="make-center">Diffusion in Diffusion: <br> Cyclic One-Way Diffusion for Text-Vision-Conditioned Generation</h1>
-        <p class="text">By investigating the space-wise diffusion phenomenon along with the step-wise reverse diffusion during denoising, We propose a training-free VT2I generation method by efficiently introducing the viusal condition to the pretrained T2I model.</p>
+        <p class="text">By investigating the space-wise diffusion phenomenon during the step-wise reverse diffusion during denoising, We propose a training-free VT2I generation method by efficiently introducing the viusal condition to the pretrained T2I model.</p>
         <p class="text"><a class="btn btn-primary btn-lg" href="{{ "/docs/home/" | relative_url }}" role="button">View Paper</a></p>
     </div>
 </div>
@@ -34,9 +34,13 @@ layout: default
 
 <div class="container" text-align="center">
     <div class="row">
-        <h2 class="text-center">Diffusion Phenomenon</h2>
-            <p class="text"> We inverse pictures of pure gray and white back to x_t, merge them together with different layouts and then regenerate them back to x_0 via deterministic denoising.
-            Different columns indicate different replacement steps t. The resulting images show how regions within an image diffuse into each other during denoising.</p>
+        <h2 class="text-center">Internal Diffusion Phenomenon</h2>
+            <p class="text"> To illustrate the internal diffusion within the image during the
+                diffusion denoise process, We inverse pictures of pure gray and white back to x<sub>t</sub>, merge them together with different layouts and then regenerate them back to x<sub>0</sub> via deterministic denoising.
+                Different columns indicate different replacement steps t. The resulting images show how regions within an image diffuse into each other during denoising.
+                Interestingly, the diffused area between gray and white can sometimes form a blurry face, which we
+                assume comes from the tendency of the face model to converge to human faces.
+            </p>
     </div>
     <div class="row">
         <div>
