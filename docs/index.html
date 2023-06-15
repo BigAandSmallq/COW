@@ -54,7 +54,7 @@ layout: default
             <h2 class="make-center">Method</h2>
             <p class="text">We stick the given visual  condition  on a predefined background and
                  inverse it as the seed initialization of the denoising starting point. 
-                 In the Cyclic One-Way Diffusion process, we "destroy" and "construct" the image in a cyclic way and ensure a one-way diffusion by consistently replacing it with corresponding x_t.</p>
+                 In the Cyclic One-Way Diffusion process, we "destroy" and "construct" the image in a cyclic way and ensure a one-way diffusion by consistently replacing it with corresponding x<sub>t</sub>.</p>
     </div>
     <div class="row">
         <div>
@@ -63,6 +63,25 @@ layout: default
     </div>
 </div>
 
+
+<div class="container" text-align="center">
+    <div class="row">
+            <h2 class="make-center">Grow a Background For the Visual Condition</h2>
+            <p class="text">
+                To demonstrate the effect of COW on the internal diffusion within the image, we conduct experiments with $\eta$ set to 0 from $T$-th to $t_1$-th step to slow down the generation process.
+                At the beginning of cycles, the visual condition face is isolated while the image is getting to fit the textual condition by forming more richer scenes.
+                As the cycle goes on, we find the generated images show a clear procedure for growing a body from the given face condition.
+                The background and visual condition are getting more and more harmonious as the completion of the human body.
+                It vividly demonstrates that the information in the visual condition keeps spreading and diffusing to the surrounding region along with cycles.
+                In addition, the model is capable of understanding the semantics of the implanted visual conditions properly. 
+            </p>
+    </div>
+    <div class="row">
+        <div>
+            <img src= "assets/img/fuse.png"  class="img-responsive" style="width: 90%;">
+        </div>
+    </div>
+</div>
 
 
 <div class="container">
