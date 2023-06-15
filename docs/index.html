@@ -25,7 +25,7 @@ layout: default
             As a further step toward a more customized image creation application, we introduce a new multi-modality generation setting that synthesizes images based on not only the semantic-level textual input, but also on the pixel-level visual conditions.
             Existing literature first converts the given visual information to semantic-level representation by connecting it to languages, and then incorporates it into the original denoising process. Seemingly intuitive, such methodological design loses the pixel values during the semantic transition, thus failing to fulfill the task scenario where the preservation of low-level vision is desired (<i>e.g.</i>, ID of a given face image).
             To this end, we propose <b>Cyclic One-Way Diffusion</b> (COW), a training-free framework for creating customized images with respect to semantic-text and pixel-visual conditioning. Notably, we observe that sub-regions of an image impose mutual interference, just like physical diffusion, to achieve ultimate harmony along the denoising trajectory.
-            Thus we propose to repetitively utilize the given visual condition in a cyclic way, by planting the visual condition as a high-concentration  <b>``seed''</b> at the initialization step of the denoising process, and <b>``diffuse''</b> it into a harmonious picture by controlling a one-way information flow from the visual condition.
+            Thus we propose to repetitively utilize the given visual condition in a cyclic way, by planting the visual condition as a high-concentration  <b>"seed"</b> at the initialization step of the denoising process, and <b>"diffuse"</b> it into a harmonious picture by controlling a one-way information flow from the visual condition.
             We repeat the destroy-and-construct process multiple times to gradually but steadily impose the internal diffusion process within the image.
             Experiments on the challenging one-shot face and text-conditioned image synthesis task demonstrate our superiority in terms of speed, image quality, and conditional fidelity compared to learning-based text-vision conditional methods.
         </p>
@@ -50,7 +50,7 @@ layout: default
             <h2 class="make-center">Method</h2>
             <p class="text">We stick the given visual  condition  on a predefined background and
                  inverse it as the seed initialization of the denoising starting point. 
-                 In the Cyclic One-Way Diffusion process, we ``destroy'' and ``construct'' the image in a cyclic way and ensure a one-way diffusion by consistently replacing it with corresponding x_t.</p>
+                 In the Cyclic One-Way Diffusion process, we "destroy" and "construct" the image in a cyclic way and ensure a one-way diffusion by consistently replacing it with corresponding x_t.</p>
     </div>
     <div class="row">
         <div>
@@ -64,6 +64,13 @@ layout: default
 <div class="container">
     <div class="row">
         <h2 class="text-center">Generalized Visual Condition</h2>
+        <p class="text">
+            We directly apply our method to other visual conditions than the human face to show its scalability. 
+            Here we show results of trees and cats with different text conditions. 
+            Our method harmoniously grows a whole body out of the visual condition under the guidance of the text condition. 
+            What's more, our method has the ability to achieve style transfer results (such as "Van Gogh", and "oil picture") and transplant one class onto the other (\textit{e.g.}, "trees" to "potted plant"), 
+            seeking a balance between preserving the visual condition and meeting given text condition.
+        </p>
     </div>
     <div class="row">
         <div class="col-md-6">
